@@ -31,7 +31,7 @@ public with sharing class IntegrationOrderTriggerHandler {
         }
 
         for (Integration_Order__c orderRec : newOrders) {
-            System.enqueueJob(new OrderSyncQueueable(orderRec.Id));
+            System.enqueueJob(new OrderSyncQueueable(orderRec.Id, orderRec.Payload__c));
         }
     }
 }
