@@ -38,10 +38,4 @@ public with sharing class IntegrationOrderService {
             System.enqueueJob(new OrderSyncQueueable(updatedOrder.Id));
         }
     }
-
-    public static void setPayload(Integration_Order__c orderRec, String payload) {
-        orderRec.Payload__c = payload;
-        update orderRec;
-    }
-
 }

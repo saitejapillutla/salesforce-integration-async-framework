@@ -1,6 +1,23 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
 	<types>
+		<members>ERPCalloutService</members>
+		<members>IntegrationDashboardController</members>
+		<members>IntegrationOrderService</members>
+		<members>IntegrationOrderTriggerHandler</members>
+		<members>OrderSyncQueueable</members>
+		<members>PlatformEventPublisher</members>
+		<name>ApexClass</name>
+	</types>
+	<types>
+		<members>IntegrationOrderTrigger</members>
+		<name>ApexTrigger</name>
+	</types>
+	<types>
+		<members>Integration_Monitoring_Console</members>
+		<name>CustomApplication</name>
+	</types>
+	<types>
 		<members>Integration_Event__e.Event_Type__c</members>
 		<members>Integration_Event__e.Message__c</members>
 		<members>Integration_Event__e.Order_Id__c</members>
@@ -15,21 +32,40 @@
 		<name>CustomField</name>
 	</types>
 	<types>
+		<members>Weather_API</members>
+		<name>CustomLabel</name>
+	</types>
+	<types>
 		<members>Integration_Event__e</members>
 		<members>Integration_Order__c</members>
 		<name>CustomObject</name>
 	</types>
 	<types>
+		<members>Integration_Monitoring_Console</members>
 		<members>Integration_Order__c</members>
 		<name>CustomTab</name>
+	</types>
+	<types>
+		<members>prm_channel_dashboard_folder/TxVJwmLERpTjHwOyVMVLqnAncbrTug</members>
+		<name>Dashboard</name>
 	</types>
 	<types>
 		<members>Integration_UtilityBar</members>
 		<name>FlexiPage</name>
 	</types>
 	<types>
+		<members>integrationDashboard</members>
 		<members>testNewComponentParent</members>
 		<name>LightningComponentBundle</name>
 	</types>
-	<version>66.0</version>
+	<types>
+		<members>Admin</members>
+		<members>Standard</members>
+		<name>Profile</name>
+	</types>
+	<types>
+		<members>unfiled$public/New_Integration_Orders_Report_HVh</members>
+		<name>Report</name>
+	</types>
+	<version>67.0</version>
 </Package>

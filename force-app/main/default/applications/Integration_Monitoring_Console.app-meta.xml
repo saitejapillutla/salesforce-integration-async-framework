@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <brand>
+        <headerColor>#0176D3</headerColor>
+        <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
+    </brand>
+    <description>Enterprise Salesforce integration monitoring application demonstrating Queueable Apex, REST integrations, retry handling, Platform Events, and LWC dashboards for external ERP synchronization.</description>
+    <formFactors>Small</formFactors>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <label>Integration Monitoring Console</label>
+    <navType>Standard</navType>
+    <tabs>standard-home</tabs>
+    <tabs>Integration_Order__c</tabs>
+    <uiType>Lightning</uiType>
+    <utilityBar>Integration_Monitoring_Console_UtilityBar</utilityBar>
+</CustomApplication>

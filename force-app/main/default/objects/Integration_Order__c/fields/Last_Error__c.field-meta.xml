@@ -3,7 +3,7 @@
     <fullName>Last_Error__c</fullName>
     <externalId>false</externalId>
     <inlineHelpText>Last failure reason</inlineHelpText>
-    <label>Last Error</label>
+    <label>Error Message</label>
     <length>255</length>
     <required>false</required>
     <trackHistory>false</trackHistory>
