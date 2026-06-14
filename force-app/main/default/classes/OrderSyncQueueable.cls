@@ -11,10 +11,8 @@ public with sharing class OrderSyncQueueable
     public void execute(QueueableContext context) {
         Integration_Order__c orderRec = [SELECT Id,Name,Order_Number__c,Status__c,Payload__c,Retry_Count__c,Response__c,Last_Error__c FROM Integration_Order__c WHERE Id = :integrationOrderId LIMIT 1];
         try {
-            // Perform callout BEFORE any DML
             HttpResponse response = ERPCalloutService.sendOrder(orderRec);
             
-            // Handle response and update records AFTER callout
             Integer statusCode = response.getStatusCode();
             if (statusCode == 200 || statusCode == 201) {
                 orderRec.Status__c = 'Success';

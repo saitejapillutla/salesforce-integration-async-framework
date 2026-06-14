@@ -25,7 +25,7 @@ public with sharing class IntegrationOrderTriggerHandler {
         }
     }
 
-    public static void afterInsert(List<Integration_Order__c> newOrders) {
+    public static void afterInsert(List<Integration_Order__c> newOrders) {  
         if (newOrders == null || newOrders.isEmpty()) {
             return;
         }
