@@ -343,7 +343,7 @@ GitHub:
 https://github.com/saitejapillutla
 
 LinkedIn:
-https://www.linkedin.com/in/saiteja-pillutla
+https://www.linkedin.com/in/saitejapillutla
 
 ---
 
