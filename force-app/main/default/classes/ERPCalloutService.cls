@@ -4,23 +4,27 @@ public with sharing class ERPCalloutService {
         Integration_Order__c orderRec
     ) {
 
+        System.debug('Payload being sent to ERP: ' + orderRec.Payload__c);
+        // current Useer info
+        System.debug('Current User: ' + UserInfo.getUserName() + ' (' + UserInfo.getUserId() + ')');
         Http http = new Http();
 
         HttpRequest request = new HttpRequest();
 
-        request.setEndpoint(
-            'https://api.restful-api.dev/collections/products/objects'
-        );
+        // Use the Named Credential (EXP_Callout) instead of hard-coded URL.
+        // Named Credential should include the base URL and any required custom headers.
+        request.setEndpoint('callout:EXP_Callout/collections/products/objects');
 
         request.setMethod('POST');
 
         request.setHeader('Content-Type','application/json');
-        request.setHeader('x-api-key', 'd4613234-2e97-4437-b37c-d9c5234b598a');
         request.setTimeout(10000);
 
         request.setBody(orderRec.Payload__c);
 
         HttpResponse response = http.send(request);
+        System.debug('Response Status: ' + response.getStatus());
+        System.debug('Response Body: ' + response.getBody());
 
         return response;
     }
