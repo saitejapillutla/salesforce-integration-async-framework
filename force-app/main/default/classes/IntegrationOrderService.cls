@@ -35,7 +35,7 @@ public with sharing class IntegrationOrderService {
 
         // Enqueue async processing
         for (Integration_Order__c updatedOrder : ordersToUpdate) {
-            System.enqueueJob(new OrderSyncQueueable(updatedOrder.Id));
+            System.enqueueJob(new OrderSyncQueueable(updatedOrder.Id , updatedOrder.Payload__c));
         }
     }
 }
