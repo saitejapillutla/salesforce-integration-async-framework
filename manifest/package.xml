@@ -7,8 +7,17 @@
 		<members>IntegrationOrderTriggerHandler</members>
 		<members>OrderSyncQueueable</members>
 		<members>PlatformEventPublisher</members>
+		<members>ERPCalloutServiceTest</members>
+		<members>OrderSyncQueueableTest</members>
+		<members>IntegrationDashboardControllerTest</members>
+		<members>PlatformEventPublisherTest</members>
+		<members>ERPCalloutMock</members>
+		<members>ERPFailureMock</members>
 		<name>ApexClass</name>
 	</types>
+
+
+	<!--
 	<types>
 		<members>IntegrationOrderTrigger</members>
 		<name>ApexTrigger</name>
@@ -79,5 +88,7 @@
 		<members>unfiled$public/New_Integration_Orders_Report_HVh</members>
 		<name>Report</name>
 	</types>
+
+	-->
 	<version>67.0</version>
 </Package>
