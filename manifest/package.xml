@@ -50,6 +50,10 @@
 		<name>Dashboard</name>
 	</types>
 	<types>
+		<members>External_Creds</members>
+		<name>ExternalCredential</name>
+	</types>
+	<types>
 		<members>Integration_UtilityBar</members>
 		<name>FlexiPage</name>
 	</types>
@@ -57,6 +61,14 @@
 		<members>integrationDashboard</members>
 		<members>testNewComponentParent</members>
 		<name>LightningComponentBundle</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>NamedCredential</name>
+	</types>
+	<types>
+		<members>EventMonitoringPermSet</members>
+		<name>PermissionSet</name>
 	</types>
 	<types>
 		<members>Admin</members>
